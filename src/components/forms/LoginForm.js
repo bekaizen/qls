@@ -48,11 +48,11 @@ class LoginForm extends React.Component {
             <div className="login">
                 <div className="logotype">
                     <Link to="/">
-                        <Logo className="logt" />
+                        <Logo className="logt animated fadeInUp" />
                     </Link>
                 </div>
                 <div className="fm-env">
-                    <div className="fm-env-bx bx1">
+                    <div className="fm-env-bx bx1 animated fadeInUp">
                         <Form onSubmit={this.onSubmit} loading={loading}>
                             
                             { errors.global && (

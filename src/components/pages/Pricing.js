@@ -12,7 +12,24 @@ const Pricing = () => (
         <Header />
         <section className="main">
             <div className="banner-action-info animated fadeInDown">
+                <div className="inner-banner">
+                    <div className="brx-t">
+                        <h1>Get time back for less than $2 per day</h1>
+                        <h2>Save an average of 42 hours per month with QuickLoanSystems.*</h2>
+                        <h4><spam> <b>Buy now</b> </spam> for 50% off Free trial for 30 days</h4>
+                    </div>
+                    <div className="banner-box">
+                        <div>
+                            <h2>50% Off</h2>
+                            <h2>QuickLoanSystems</h2>
+                            <p>For 3 Months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div className="pricing-table">
+                
             </div>
         </section>
         <footer className="animated fadeInUp">
