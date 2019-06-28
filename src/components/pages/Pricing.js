@@ -28,8 +28,40 @@ const Pricing = () => (
                 </div>
             </div>
 
-            <div className="pricing-table">
-                
+            <div className="pricing-table animated fadeInDown">
+                <div className="pricing-cards">
+                    <div className="pricing-card business-cards">
+                        <div className="pricing-table-header">
+                            <div className="pricing business">
+                                <h4>Small Business</h4>
+                                <span>For sole proprietors, LLCs, partnerships, corporations, non-profits, and more.</span>
+                            </div>
+                        </div>
+                        <div className="pricing-info">
+                            <div className="cards">
+                                <div className="staple-card">
+
+                                </div>
+                                <div className="staple-card">
+                                    
+                                </div>
+                                <div className="staple-card sc">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="pricing-card simple-cards">
+                        <div className="pricing-table-header">
+                            <div className="pricing simple">
+                                <h4>Individual</h4>
+                                <span>For sole propietors who file a Schedule C.</span>
+                            </div>
+                        </div>
+                        <div className="pricing-info"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <footer className="animated fadeInUp">

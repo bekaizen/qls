@@ -1,6 +1,9 @@
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
 body {
     background:#f4f5f8;
-    font-family: Nunito, "Open Sans",Helvetica,Arial !important;
 }
 
 * {
@@ -23,6 +26,77 @@ body {
 .main .pricing-table {
     width:100%;
     min-height:500px;
+}
+
+.main .pricing-table-header {
+    width:100%;
+    height:80px;
+    display:grid;
+    align-items:center;
+}
+
+.main .pricing-cards {
+    width:1175px;
+    height:auto;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: calc(100% - 300px) 300px;
+    grid-gap:20px;
+}
+
+.main .pricing-card {
+    height: auto;
+    position: relative;
+}
+
+.main .pricing-card .pricing-info {
+    width:100%;
+    height:auto;
+    background-color:#FFF;
+    border:1px solid rgba(0,0,0,0.07);
+    box-shadow:0 6px 12px rgba(0,0,0,0.07);
+    position: absolute;
+}
+
+.main .pricing-card .pricing-info .cards {
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.main .pricing-card .pricing-info .cards .staple-card {
+    box-sizing: border-box;
+    padding:16px 0;
+    position: relative;
+}
+
+.main .pricing-card .pricing-info .cards .staple-card::after {
+    content:'';
+    display: block;
+    width:1px;
+    height:100%;
+    position: absolute;
+    right:0;
+    background:rgba(0,0,0,0.07);
+}
+
+.main .pricing-card .pricing-info .cards .staple-card:last-of-type::after {
+    content:"";
+    display:block;
+    width:100%;
+    height:30px;
+    position:relative;
+    top:calc(-100% + 16px);
+    right:0;
+    background:#40E0D0;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+}
+
+.main .pricing-table-header .pricing h4 {
+    margin:0;
+    padding:0;
+    font-size:1.3rem;
 }
 
 .main .banner-action-info {
@@ -92,7 +166,7 @@ body {
     /* border-bottom:1px solid rgb(221, 219, 219); */
     display:grid;
     align-items:center;
-    grid-template-columns: calc(100% - 300px) 300px;
+    grid-template-columns: calc(100% - 380px) 380px;
     padding:0 36px;
     position:sticky;
     position:-webkit-sticky;
@@ -252,6 +326,10 @@ footer .footer-bottom .sbx {
         display:none;
     }
 
+    .main {
+        width:100%;
+    }
+
     .cx {
         width:100%;
     }
@@ -277,11 +355,9 @@ footer .footer-bottom .sbx {
 }
 
 @media screen and ( max-width:720px ) {
-    .header .l1 {
-        display:none;
-    }
-
-    .header .l2 {
-        display:
+    .pricing-cards {
+        width:100%;
+        padding:0 36px;
+        grid-template-columns: 1fr;
     }
 }
